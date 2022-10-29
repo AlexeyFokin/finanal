@@ -69,7 +69,7 @@ def update():
     col3.write(f'Industry: {info.get("industry", "")}')
 
     div = stock_data.dividends
-    fig = px.scatter(div)
+    fig = px.scatter(div, color_discrete_sequence=['yellow'])
     st.plotly_chart(fig)
 
 
